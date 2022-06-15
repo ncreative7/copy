@@ -1,0 +1,1369 @@
+<!-- 모작 :: https://www.prospecs.com/display.do?cmd=mallMain -->
+<!-- 깃주소 :: https://github.com/ncreative7/copy -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로스펙스 모작 사이트</title>
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 슬릭 슬라이더 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+  <!-- 스와이퍼 슬라이더 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.4/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.4/swiper-bundle.min.css" />
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!-- ScrollMagic & gsap 연동 플러그인 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
+  <!-- 웹 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- MY JS -->
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 시작 -->
+  <header class="ps-top top">
+    <div class="top-wrap con">
+      <div class="logo"><a href="javascript:void(0)"></a></div>
+      <div class="menu eng-font">
+        <div class="gnb">
+          <a href="javascript:void(0)">SHOP</a>
+          <div class="downMenu-wrap">
+            <div class="inner con">
+              <ul class="downMenu">
+                <ul>
+                  <li><a href="javascript:void(0)">SHOES</a></li>
+                  <li><a href="javascript:void(0)">워킹화</a></li>
+                  <li><a href="javascript:void(0)">러닝화</a></li>
+                  <li><a href="javascript:void(0)">트레킹화</a></li>
+                  <li><a href="javascript:void(0)">스니커즈</a></li>
+                  <li><a href="javascript:void(0)">샌들/슬리퍼</a></li>
+                  <li><a href="javascript:void(0)">아동화</a></li>
+                  <li><a href="javascript:void(0)">기타</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">MEN</a></li>
+                  <li><a href="javascript:void(0)">아우터</a></li>
+                  <li><a href="javascript:void(0)">트레이닝</a></li>
+                  <li><a href="javascript:void(0)">상의</a></li>
+                  <li><a href="javascript:void(0)">하의</a></li>
+                  <li><a href="javascript:void(0)">기타</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">WOMEN</a></li>
+                  <li><a href="javascript:void(0)">아우터</a></li>
+                  <li><a href="javascript:void(0)">트레이닝</a></li>
+                  <li><a href="javascript:void(0)">상의</a></li>
+                  <li><a href="javascript:void(0)">하의</a></li>
+                  <li><a href="javascript:void(0)">기타</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">BAG/ACC</a></li>
+                  <li><a href="javascript:void(0)">크로스/토트백</a></li>
+                  <li><a href="javascript:void(0)">백팩</a></li>
+                  <li><a href="javascript:void(0)">모자/양말</a></li>
+                  <li><a href="javascript:void(0)">기타</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">ORIGINAL</a></li>
+                  <li><a href="javascript:void(0)">스니커즈</a></li>
+                  <li><a href="javascript:void(0)">샌들/슬라이드</a></li>
+                  <li><a href="javascript:void(0)">의류</a></li>
+                  <li><a href="javascript:void(0)">용품</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">SALE</a></li>
+                  <li><a href="javascript:void(0)">신발</a></li>
+                  <li><a href="javascript:void(0)">남성</a></li>
+                  <li><a href="javascript:void(0)">여성</a></li>
+                  <li><a href="javascript:void(0)">용품</a></li>
+                </ul>
+              </ul>
+              <div class="downBanner">
+                <ul>
+                  <li><a href="javascript:void(0)">BEST 50</a></li>
+                  <li><a href="javascript:void(0)">GIFT CARD</a></li>
+                </ul>
+                <a href="javascript:void(0)">
+                  <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/banner/Shop_banner01.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gnb">
+          <a href="javascript:void(0)">EVENT</a>
+        </div>
+        <div class="gnb">
+          <a href="javascript:void(0)">ARCHIVE</a>
+          <div class="downMenu-wrap">
+            <div class="inner con">
+              <ul class="downMenu">
+                <ul>
+                  <li><a href="javascript:void(0)">LOOKBOOK</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">NEWS</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:void(0)">ISSUE</a></li>
+                </ul>
+              </ul>
+              <div class="downBanner">
+                <a href="javascript:void(0)">
+                  <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/banner/Archive_banner01.png" alt="">
+                </a>
+              </div>
+              <div class="downBanner">
+                <a href="javascript:void(0)">
+                  <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/banner/Archive_banner02.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gnb">
+          <a href="javascript:void(0)">SPONSORSHIP</a>
+          <div class="downMenu-wrap">
+            <div class="inner con">
+              <ul class="sponBanner">
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/banner/Spon_banner01.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gnb">
+          <a href="javascript:void(0)">SMART FIT</a>
+          <div class="downMenu-wrap bg">
+            <div class="bg">
+              <div class="inner con">
+                <h3><span class="eng-font">SMART FIT</span></h3>
+                <p>프로스펙스 스마트핏은 내 발에 완벽한 사이즈와 상품을 추천해 주고, 맞춤신발 제작까지 해 주는 SMART한 서비스입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon eng-font">
+        <button class="icon-search"></button>
+        <button class="icon-cart"></button>
+        <a class="login" href="javascript:void(0)">LOGIN</a>
+      </div>
+    </div>
+  </header>
+  <!-- 헤더 끝 -->
+
+  <!-- 메인 비주얼 시작 -->
+  <section class="mainVisual">
+    <div class="visual-wrap">
+      <div class="slides">
+        <div class="slide-page eng-font">
+          <div class="box" data-slide-type="video">
+            <a href="javascript:void(0)">
+              <div class="img-box">
+                <video id="ps-video" autoplay muted loop style="width:100%; height: 100vh; object-fit: cover;">
+                  <source type="video/mp4" src="img/main_visual/banner01.mp4">
+                </video>
+              </div>
+              <div class="txt-box">
+                <p>PRO-SPECS</p>
+                <p>22SS BRAND STORY</p>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box"
+                style="background-image: url(https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_visual/banner02.png);">
+              </div>
+              <div class="txt-box">
+                <p>프로스펙스닷컴</p>
+                <p>리뉴얼 오픈 이벤트</p>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box"
+                style="background-image: url(https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_visual/banner03.png);">
+              </div>
+              <div class="txt-box">
+                <p>PRO-SPECS</p>
+                <p>SPONSORSHIP</p>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box"
+                style="background-image: url(https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_visual/banner04.png);">
+              </div>
+              <div class="txt-box">
+                <p>22SS NEW COLLECTION</p>
+                <p>PERFORMANCE</p>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box"
+                style="background-image: url(https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_visual/banner05.png);">
+              </div>
+              <div class="txt-box">
+                <p>22SS NEW COLLECTION</p>
+                <p>ORIGINAL</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide-num eng-font">
+          <div class="page-num"></div>
+          <div class="page-track">
+            <div class="track"></div>
+          </div>
+          <div class="page-total"></div>
+        </div>
+        <div class="slide-btn">
+          <div class="prev"></div>
+          <div class="next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 메인 비주얼 끝 -->
+
+  <!-- 메인 배너 시작 -->
+  <section class="mainBanner">
+    <div class="banner-wrap">
+      <a href="javascript:void(0)" class="as-init">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_banner/banner01.png" alt="">
+        <div class="txt-box">
+          <h3 class="eng-font">NEW PERFORMANCE</h3>
+          <p>새로워진 퍼포먼스 라인을 만나다</p>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="as-init" data-ts-delay="600">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/main_banner/banner02.png" alt="">
+        <div class="txt-box">
+          <h3 class="eng-font">NEW SPORTS CLASSIC</h3>
+          <p>시선을 사로잡는 오리지널 스포츠클럽</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- 메인 배너 끝 -->
+
+  <!-- 상품 소개 시작 -->
+  <section class="prdIntro">
+    <div class="intro-wrap">
+      <div class="slides">
+        <div class="slide-page">
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_intro/slide01.png" alt="">
+                <div class="slide-btn">
+                  <div class="prev"></div>
+                  <div class="next"></div>
+                </div>
+              </div>
+              <div class="txt-box eng-font">
+                <h3 class="head">
+                  PRO-SPECS<br>
+                  PERFORMANCE
+                </h3>
+                <div class="lore">
+                  <p>22SS NEW ARRIVAL</p><br>
+                  <p>에너젯 113 ></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_intro/slide02.png" alt="">
+                <div class="slide-btn">
+                  <div class="prev"></div>
+                  <div class="next"></div>
+                </div>
+              </div>
+              <div class="txt-box eng-font">
+                <h3 class="head">
+                  PRO-SPECS<br>
+                  ORIGINAL
+                </h3>
+                <div class="lore">
+                  <p>22SS NEW ARRIVAL</p><br>
+                  <p>스펙터 103 ></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_intro/slide03.png" alt="">
+                <div class="slide-btn">
+                  <div class="prev"></div>
+                  <div class="next"></div>
+                </div>
+              </div>
+              <div class="txt-box eng-font">
+                <h3 class="head">
+                  PRO-SPECS<br>
+                  PERFORMANCE
+                </h3>
+                <div class="lore">
+                  <p>22SS 스피드라인</p><br>
+                  <p>바람막이 자켓 ></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="box" data-slide-type="img">
+            <a href="javascript:void(0)">
+              <div class="img-box">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_intro/slide04.png" alt="">
+                <div class="slide-btn">
+                  <div class="prev"></div>
+                  <div class="next"></div>
+                </div>
+              </div>
+              <div class="txt-box eng-font">
+                <h3 class="head">
+                  PRO-SPECS<br>
+                  ORIGINAL
+                </h3>
+                <div class="lore">
+                  <p>22SS ORIGINAL</p><br>
+                  <p>SURF 그래픽 T ></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide-num eng-font">
+          <div class="btn">
+            <p>01</p>
+          </div>
+          <div class="btn">
+            <p>02</p>
+          </div>
+          <div class="btn">
+            <p>03</p>
+          </div>
+          <div class="btn">
+            <p>04</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 상품 소개 끝 -->
+
+  <!-- 상품 아이템 시작 -->
+  <section class="prdItem">
+    <div class="item-wrap">
+      <!-- 상품 탭 메뉴 -->
+      <div class="tab-menu eng-font">
+        <a class="on" href="javascript:void(0)">#22SS 바람막이</a>
+        <a href="javascript:void(0)">#22SS 워킹화</a>
+        <a href="javascript:void(0)">#22SS 러닝화</a>
+        <a href="javascript:void(0)">#22SS 오리지널 반팔티</a>
+      </div>
+
+      <!-- 상품 목록 -->
+      <div class="item-list">
+        <div class="swiperNo0">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab01/item_01.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">아웃포켓 라이프 자켓 M-S111</p>
+                    <div class="price">
+                      <p class="dis-price">189,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>151,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab01/item_02.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">아웃포켓 라이프 자켓 M-S113</p>
+                    <div class="price">
+                      <p class="dis-price">189,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>151,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab01/item_03.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">스피드라인 바람막이 자켓 M-M911</p>
+                    <div class="price">
+                      <p class="dis-price">169,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>135,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab01/item_04.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">스피드라인 바람막이 자켓 M-M912</p>
+                    <div class="price">
+                      <p class="dis-price">169,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>135,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab01/item_05.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">스피드라인 바람막이 자켓 M-M913</p>
+                    <div class="price">
+                      <p class="dis-price">169,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>135,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div class="swiperNo1">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_01.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">본투비 3</p>
+                    <div class="price">
+                      <p class="cur-price">99,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_02.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">웨이브 핏 1</p>
+                    <div class="price">
+                      <p class="cur-price">89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_03.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">리버EX 614</p>
+                    <div class="price">
+                      <p class="cur-price">119,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_04.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">랩터 4</p>
+                    <div class="price">
+                      <p class="cur-price">149,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_05.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">비욘드 네오 3</p>
+                    <div class="price">
+                      <p class="dis-price">99,000원</p>
+                      <p class="cur-price"><span class="per">10%</span>89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_06.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에어붐 BX 112</p>
+                    <div class="price">
+                      <p class="cur-price">189,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_07.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에어붐 BX 111</p>
+                    <div class="price">
+                      <p class="cur-price">189,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_08.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">스위프트 W 412</p>
+                    <div class="price">
+                      <p class="cur-price">79,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_09.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">비욘드 네오 2</p>
+                    <div class="price">
+                      <p class="dis-price">99,000원</p>
+                      <p class="cur-price"><span class="per">10%</span>89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab02/item_10.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에어리쿨 BX 2</p>
+                    <div class="price">
+                      <p class="cur-price">119,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div class="swiperNo2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_01.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">슈퍼라이트 112</p>
+                    <div class="price">
+                      <p class="cur-price">89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_02.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에너젯 113</p>
+                    <div class="price">
+                      <p class="dis-price">119,000원</p>
+                      <p class="cur-price"><span class="per">10%</span>107,100원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_03.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">헥사그램 111</p>
+                    <div class="price">
+                      <p class="cur-price">149,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_04.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에너젯 112</p>
+                    <div class="price">
+                      <p class="dis-price">119,000원</p>
+                      <p class="cur-price"><span class="per">10%</span>107,100원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_05.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">스피드 레이서 104</p>
+                    <div class="price">
+                      <p class="dis-price">69,000원</p>
+                      <p class="cur-price"><span class="per">20%</span>55,200원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_06.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">슈퍼라이트 111</p>
+                    <div class="price">
+                      <p class="cur-price">89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_07.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">에너젯 111</p>
+                    <div class="price">
+                      <p class="dis-price">119,000원</p>
+                      <p class="cur-price"><span class="per">10%</span>107,100원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_08.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">X-40 RUN 113</p>
+                    <div class="price">
+                      <p class="cur-price">99,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_09.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">X-40 RUN 114</p>
+                    <div class="price">
+                      <p class="cur-price">99,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab03/item_10.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">슈퍼라이트 213</p>
+                    <div class="price">
+                      <p class="cur-price">89,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div class="swiperNo3">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_01.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 SURF CRANE 그래픽 반팔 MT-X402</p>
+                    <div class="price">
+                      <p class="cur-price">59,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_02.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 베이직 로고 C/P 반팔 MT-X352 </p>
+                    <div class="price">
+                      <p class="cur-price">39,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_03.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 베이직 로고 C/P 반팔 MT-X351 </p>
+                    <div class="price">
+                      <p class="cur-price">39,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_04.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 WAVE 그래픽 반팔 MT-X411</p>
+                    <div class="price">
+                      <p class="cur-price">59,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_05.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 베이직 로고 C/P 반팔 MT-X355 </p>
+                    <div class="price">
+                      <p class="cur-price">39,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_06.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 옴브레 그래픽 반팔 MT-X381</p>
+                    <div class="price">
+                      <p class="cur-price">59,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_07.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 시어서커 반팔 티셔츠 MT-X441 </p>
+                    <div class="price">
+                      <p class="cur-price">59,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_08.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 SURF 그래픽 반팔 MT-X363</p>
+                    <div class="price">
+                      <p class="cur-price">49,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_09.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 SURF CRANE 그래픽 반팔 MT-X401</p>
+                    <div class="price">
+                      <p class="cur-price">59,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <div class="img-box">
+                    <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_item/Tab04/item_10.jpg"
+                      alt="">
+                  </div>
+                  <div class="txt-box">
+                    <p class="cate">[2022 S/S 신상]</p>
+                    <p class="name">오리지널 스니커즈 자수 반팔 MT-X321</p>
+                    <div class="price">
+                      <p class="cur-price">49,000원</p>
+                    </div>
+                    <div class="gender">
+                      <div class="man">남</div>
+                      <div class="girl">여</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 상품 아이템 끝 -->
+
+  <!-- 상품 배너 01 시작 -->
+  <section class="prdBanner01">
+    <div class="banner">
+      <a href="javascript:void(0)">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner01/Banner01.png" alt="">
+      </a>
+    </div>
+    <div class="desc">
+      <a href="javascript:void(0)">
+        <div class="txt-box eng-font">
+          <h3>
+            PRO-SPECS X HANKOOK TIRE<br>
+            COLLABORATION
+          </h3>
+          <p>
+            안전한 이동을 고민하고 대한민국 지형을 가장 잘 아는<br>
+            뛰어난 기술력의 대한민국 오리지널 대표 브랜드의 만남.<br>
+            프로스펙스 X 한국타이어 콜라보레이션
+          </p>
+        </div>
+      </a>
+      <ul class="prd-list">
+        <li>
+          <a href="javascript:void" data-ts-delay="200" class="as-init">
+            <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner01/sBanner01.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void" data-ts-delay="400" class="as-init">
+            <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner01/sBanner02.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void" data-ts-delay="600" class="as-init">
+            <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner01/sBanner03.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 상품 배너 01 끝 -->
+
+  <!-- 상품 배너 02 시작 -->
+  <section class="prdBanner02">
+    <div class="banner">
+      <a href="javascript:void(0)">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner02/banner01.jpg" alt="">
+      </a>
+      <a href="javascript:void(0)">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/product_banner02/banner02.jpg" alt="">
+      </a>
+    </div>
+    <div class="desc">
+      <a href="javascript:void(0)">
+        <div class="txt-box eng-font">
+          <h3>
+            Eco Recycle Material
+          </h3>
+          <p>
+            친환경 프로젝트 Sustainability & PRO-SPECS <br>
+            지속가능을 향한 프로스펙스의 도전
+          </p>
+        </div>
+      </a>
+      <a href="javascript:void(0)">
+        <div class="txt-box eng-font">
+          <h3>
+            프로스펙스, 2022 S/S 화보 공개
+          </h3>
+          <p>
+            '새로워진 퍼포먼스를 만나다'라는 주제로 선보인 이번 화보는 프로스펙스 시즌 대표 아이템인 '에너젯'과 '스펙터' 러닝화 외에도 스포츠 의류 등 모든 움직임을 탄탄하게 서포트 할 견고하고
+            감각적인 제품을 엿볼 수 있습니다.
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- 상품 배너 02 끝 -->
+
+  <!-- 퀵 메뉴 시작 -->
+  <section class="quickMenu">
+    <ul>
+      <li class="lookbook">
+        <a class="eng-font" href="javascript:void">
+          LOOKBOOK >
+        </a>
+        <p class="desc">
+          22 S/S 시즌 룩북을<br>
+          만나보세요.
+        </p>
+      </li>
+
+      <li class="store">
+        <a class="eng-font" href="javascript:void">
+          STORE >
+        </a>
+        <p class="desc">
+          가장 가까운 프로스펙스 매장을<br>
+          검색해보세요.
+        </p>
+      </li>
+
+      <li class="giftcard">
+        <a class="eng-font" href="javascript:void">
+          GIFT CARD >
+        </a>
+        <p class="desc">
+          소중한 분께 LS네트웍스 모바일상품권을<br>
+          선물해 보세요.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <!-- 퀵 메뉴 끝 -->
+
+  <!-- 푸터 시작 -->
+  <footer>
+    <div class="footer-wrap">
+      <div class="ps-left">
+        <a href="#">
+          <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/footer/footer_logo.svg" alt="">
+        </a>
+        <div class="info">
+          <p>(주)LS네트웍스</p>
+          <p>대표이사 : 문성준 | 사업자등록번호 : 622-81-04805</p>
+          <p>통신판매업 신고번호 : 2016-경남김해-0229</p>
+          <p>경상남도 김해시 호계로 428, 1층(부원동) <a href="javascript:void(0)"><u>사업자정보확인</u></a></p>
+          <p>개인정보관리 책임자 : 예재승</p>
+          <p>prospecsonline@lsnetworks.com</p>
+        </div>
+        <div class="copy">
+          <p>SGI서울보증안내</p>
+          <p>
+            고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br> 저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 이용하실 수 있습니다.
+            <a href="javascript:void(0)"><u><b>서비스 가입 사실 확인</b></u></a>
+          </p>
+          <p class="copyright eng-font">
+            프로스펙스닷컴　|　COPYRIGHT© LS NETWORKS CO. ALL RIGHTS RESERVED
+          </p>
+        </div>
+      </div>
+      <div class="ps-right">
+        <ul class="footer-menu">
+          <li><a href="javascript:void(0)"><b>개인정보처리방침</b></a></li>
+          <li><a href="javascript:void(0)">이용약관</a></li>
+          <li><a href="javascript:void(0)">고객센터</a></li>
+          <li><a href="javascript:void(0)">A/S 안내</a></li>
+          <li><a href="javascript:void(0)">공지사항</a></li>
+          <li><a href="javascript:void(0)">앱다운로드</a></li>
+        </ul>
+        <div class="cs">
+          <div class="social-icon">
+            <a href="javascript:void(0)">
+              <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/footer/icon_facebook.svg" alt="">
+            </a>
+            <a href="javascript:void(0)">
+              <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/footer/icon_youtube.svg" alt="">
+            </a>
+            <a href="javascript:void(0)">
+              <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/footer/icon_insta.svg" alt="">
+            </a>
+          </div>
+          <div class="cs-box">
+            <div class="eng-font">CONTACT US</div>
+            <div>
+              <p>구매 / 배송 문의</p>
+              <p class="num">080-710-1020</p>
+              <p>상품정보 / AS문의</p>
+              <p class="num">080-023-1020</p>
+            </div>
+            <div>
+              <p>
+                MON - FRI 09 : 00 - 18:00<br>
+                주말, 공휴일 휴무<br>
+                BREAK TIME : 12:30 - 13:30
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 푸터 끝 -->
+
+  <!-- 최상단 버튼 -->
+  <button class="top-btn"></button>
+
+  <!-- 팝업 -->
+  <div class="pop-up">
+    <div class="template">
+      <div class="img-box">
+        <a href="javascript:void(0)">
+          <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/popup/220425_renewal_pm_pop.png" alt="">
+        </a>
+      </div>
+      <div class="click-box">
+        <p>
+          <label for="check"><input type="checkbox" id="check">하루동안 보지 않기</label>
+        </p>
+        <p class="close">
+          <a href="javascript:void(0)">
+            <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/popup/lay_closeB.png" alt="">
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 로그인 창 -->
+  <div class="modal-wrap">
+    <div class="modal">
+      <a href="javascript:void(0)" class="close-btn">
+        <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/modal/icon_modla-close.png" alt="">
+      </a>
+      <div class="modal-container">
+        <form action="">
+          <div class="login-input">
+            <h2>로그인</h2>
+            <div class="login-id">
+              <input type="text" placeholder="아이디를 이메일 형식으로 입력해 주세요." name="login_id" maxlength="50">
+            </div>
+            <div class="login-pw">
+              <input type="password" placeholder="비밀번호를 입력해주세요." name="password" maxlength="20">
+            </div>
+            <div class="login-cs">
+              <div class="chkbox">
+                <label for="id-save">
+                  <input type="checkbox" id="id-save">
+                  <span>아이디 저장</span>
+                </label>
+              </div>
+              <div class="find">
+                <a href="javascript:void(0)">아이디</a> / <a href="javascript:void(0)">비밀번호 찾기</a>
+              </div>
+            </div>
+          </div>
+          <div class="login-btn">
+            <a href="javascript:void(0)">로그인</a>
+            <a href="javascript:void(0)">회원가입</a>
+          </div>
+          <p class="sns-login">SNS 간편 로그인</p>
+          <div class="sns-sign-up">
+            <div class="icon">
+              <a href="javascript:void(0)">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/modal/icon_naver.png" alt="">
+              </a>
+            </div>
+            <div class="icon">
+              <a href="javascript:void(0)">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/modal/icon_kakao.png" alt="">
+              </a>
+            </div>
+            <div class="icon">
+              <a href="javascript:void(0)">
+                <img src="https://cdn.jsdelivr.net/gh/ncreative7/copy/img/modal/icon_face.png" alt="">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
